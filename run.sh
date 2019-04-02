@@ -6,6 +6,7 @@ REALLOC_GPU_MB=100
 OUTPUT_FILE="gpu_usage.txt"
 REALLOC_TIMES=3
 
+CUDA_VISIBLE_DEVICES=0 \
 FLAGS_initial_gpu_memory_in_mb=$INITIAL_GPU_MB \
 FLAGS_reallocate_gpu_memory_in_mb=$REALLOC_GPU_MB \
 FLAGS_benchmark=true \
